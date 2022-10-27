@@ -13,8 +13,14 @@
 
 	<script>
 		var heading = document.querySelector('#heading');
+		count = 0;
 		heading.onclick = function() {
-			heading.style.color = "red";
+			count++
+			if(count%2==1)
+				heading.style.color = "red";
+			else heading.style.color = "blue";
+			
+
 		}
 	</script>
 </body>
